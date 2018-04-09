@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zao.lab3_ui.MainActivity">
+
+    <TextView
+        android:id="@+id/textView_Loggin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editText_login"
+        android:layout_alignBottom="@+id/editText_login"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="29dp"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/textView_Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText_password"
+        android:layout_alignStart="@+id/textView_Loggin"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/editText_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="18dp"
+        android:layout_toEndOf="@+id/textView_Password"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editText_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText_password"
+        android:layout_alignStart="@+id/editText_password"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
+    <Button
+        android:id="@+id/button_logIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/editText_password"
+        android:layout_marginBottom="128dp"
+        android:layout_marginStart="38dp"
+        android:text="LOG IN" />
+
+    <TextView
+        android:id="@+id/textView_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button_logIn"
+        android:layout_marginBottom="56dp"
+        android:layout_marginStart="23dp"
+        android:text="About" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText_login"
+        android:layout_alignStart="@+id/button_logIn"
+        android:layout_marginBottom="57dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+</android.widget.RelativeLayout>
